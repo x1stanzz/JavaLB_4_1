@@ -1,7 +1,7 @@
 package org.example;
 
 public class Palindrome {
-    private boolean isPalindrome(String str){
+    public static boolean isPalindrome(String str){
         str = str.replaceAll("\\s","").toLowerCase();
         int firstSymb = 0;
         int lastSymb = str.length() - 1;
@@ -13,8 +13,5 @@ public class Palindrome {
             lastSymb--;
         }
         return true;
-    }
-    public boolean getIsPalindrome(String str){
-        return isPalindrome(str);
     }
 }
