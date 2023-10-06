@@ -2,7 +2,7 @@ package org.example;
 
 public class Palindrome {
     public static boolean isPalindrome(String str){
-        str = str.replaceAll("\\s","").toLowerCase();
+        str = str.replaceAll("[\\s.,?!;:']","").toLowerCase();
         int firstSymb = 0;
         int lastSymb = str.length() - 1;
         while(firstSymb < lastSymb){
