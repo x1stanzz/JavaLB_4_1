@@ -7,7 +7,7 @@ public class Palindrome {
         int lastSymb = str.length() - 1;
         while(firstSymb < lastSymb){
             if(str.charAt(firstSymb) != str.charAt(lastSymb)){
-                return false
+                return false;
             }
             firstSymb++;
             lastSymb--;
